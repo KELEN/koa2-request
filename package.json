@@ -1,6 +1,6 @@
 {
   "name": "koa2-request",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "support es7 async await",
   "main": "index.js",
   "scripts": {
