@@ -1,35 +1,23 @@
-#koa2-request
+koa2-request
 ===========
 
-支持koa2 async和await写法
+> koa2的request库封装，支持async和await写法
 
-安装
+## 安装
 
 ```bash
 npm install koa2-request
 ```
 
-```js
+## 使用方法
 
-let koa = require('koa');
-let request = require('koa2-request');
-let route = require("koa-route");
+```javascript
 
-route.use("/get", async (ctx, next) => {
-	let result = await request({
-	    url: dubboConf.url + `/user/findByUnameNPwd`,
-	    method: 'post',
-	    headers: {
-	        'content-type': 'application/json',
-	        'charset': 'UTF-8'
-	    },
-	    json: true,
-	    body: {
-	        username: uname, pwd: pwd
-	    }
-	});
-	this.body = result;
-})
+var koa2Req = require('koa2-request');
 
-
+app.use(async(ctx, next) => {
+	// request选项
+	var res = await koa2Req('http://www.baidu.com');
+	ctx.body = res.body;
+});
 ```

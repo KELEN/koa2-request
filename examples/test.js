@@ -1,13 +1,14 @@
 var koa = require('koa');
 var request = require('../index'); //koa2-request
- 
-var app = koa();
+
+var app = new koa();
 
 app.use(async(ctx, next) => {
 	// request选项
-	var res = await request(opts);
+	var res = await request('http://www.baidu.com');
+	ctx.body = res.body;
 });
 
-
-
-app.listen(process.env.PORT || 8080);
+app.listen(8080, () => {
+	console.log('server is listener on port 8080')
+});

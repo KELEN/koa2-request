@@ -1,11 +1,19 @@
 {
   "name": "koa2-request",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "support es7 async await",
   "main": "index.js",
   "scripts": {
     "test": "./example/example.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KELEN/koa2-request.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KELEN/koa2-request/issues"
+  },
+  "homepage": "https://github.com/KELEN/koa2-request#readme",
   "keywords": [
     "koa2-request",
     "request",
@@ -17,5 +25,8 @@
     "name": "kelen",
     "email": "340443366@qq.com"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }
