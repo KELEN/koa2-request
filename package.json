@@ -4,7 +4,7 @@
   "description": "support es7 async await",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "./example/example.js"
   },
   "keywords": [
     "koa2-request",
@@ -13,6 +13,9 @@
     "async",
     "await"
   ],
-  "author": "kelen",
+  "author": {
+    "name": "kelen",
+    "email": "340443366@qq.com"
+  },
   "license": "ISC"
 }
